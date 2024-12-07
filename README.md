@@ -73,3 +73,7 @@ Ciclo del Worker:
 Fetch dati → Aggiorna dataset → Se abbastanza dati → Allena modello → Predici → Decidi trade (Buy, Sell, Hold, o Emergency Sell) → Invia segnali GUI e log → attende qualche secondo e ripete.
 Interrompere: Clic su stop → worker si fermano → chiusura app.
 In sintesi, questo bot alterna fasi di raccolta dati (fetch), elaborazione ML (train e predict), decisioni di trading e output su GUI. L’intero ciclo è asincrono, con più DEX in parallelo, ognuno con il proprio flusso.
+
+python fetch_historical_data.py --market <MARKET_ADDRESS> --start YYYY-MM-DD --end YYYY-MM-DD
+python tune_model.py
+python main.py

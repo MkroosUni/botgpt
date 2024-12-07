@@ -1,5 +1,5 @@
 # ui.py
-# GUI con PyQt5: un tab per ogni DEX.
+# GUI con PyQt5: un tab per ogni DEX, mostra dati e log, consente di stoppare il bot.
 
 import numpy as np
 from PyQt5.QtWidgets import (QWidget, QVBoxLayout, QLabel, QPushButton, 
@@ -76,7 +76,7 @@ class MainWindow(QWidget):
     def __init__(self, dex_configs):
         super().__init__()
         
-        self.setWindowTitle("Solana DEX Sniper Bot - Multi DEX")
+        self.setWindowTitle("Solana DEX Sniper Bot - Multi DEX Improved")
         self.resize(1000, 800)
         
         layout = QVBoxLayout()

@@ -4,3 +4,5 @@ solana
 tensorflow
 keras-tuner
 matplotlib
+requests
+logging
