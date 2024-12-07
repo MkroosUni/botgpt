@@ -1,0 +1,6 @@
+pyqt5
+pyserum
+solana
+tensorflow
+keras-tuner
+matplotlib
